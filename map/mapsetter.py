@@ -5,6 +5,12 @@ settedmap = [[0]*50]*50
 seting_x = 0
 seting_y = 0
 
+def changetile(tile):
+    if tile == 4:
+        tile==0
+    else :
+        tile+=1
+
 pygame.init() 
 
 screen_width = 480 
@@ -32,7 +38,7 @@ while running:
             seting_x +=1
         elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
             print("l")
-            settedmap[seting_x,seting_y] = 0
-
+            settedmap[seting_x,seting_y] = changetile(settedmap[seting_x,seting_y])
+    
 pygame.quit()
 print(settedmap)
