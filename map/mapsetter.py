@@ -13,7 +13,10 @@ def changetile(tile):
     return tile
 
 tile_0 = pygame.image.load("./img/안보이는곳타일.jpg")
-tile_1 = pygame.image.load("./")
+tile_1 = pygame.image.load("./img/계단.jpg")
+tile_2 = pygame.image.load("./img/복도타일.png")
+tile_3 = pygame.image.load("./img/학교반타일.jpg")
+tile_4 = pygame.image.load("./img/운동장.jpg")
 
 pygame.init() 
 
